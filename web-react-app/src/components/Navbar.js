@@ -29,6 +29,11 @@ const NavItem = styled.a`
   padding: 5px;
 `;
 
+// &:hover ${Page} {
+//   background-image: none;
+// }
+//
+
 function Navbar() {
   return (
     <NavbarContainer>

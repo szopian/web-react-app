@@ -1,7 +1,11 @@
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+
 function App() {
   return (
     <div>
-      <h1>is it working?</h1>
+      <Header />
+      <Navbar />
     </div>
   );
 }

@@ -1,11 +1,9 @@
-import Header from "./components/Header";
-import Navbar from "./components/Navbar";
+import WelcomePage from "./pages/WelcomePage";
 
 function App() {
   return (
     <div>
-      <Header />
-      <Navbar />
+      <WelcomePage />
     </div>
   );
 }

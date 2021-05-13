@@ -24,10 +24,17 @@ const Logo = styled.div``;
 
 const List = styled.div`
   display: flex;
+  right: 0;
+  margin-left: 1vw;
+  flex: 0 1 auto;
+  position: absolute;
+  min-width: -webkit-min-content;
+  min-width: min-content;
+  cursor: pointer;
 `;
 
 const ListItem = styled.div`
-  color: pink;
+  padding: 3px;
 `;
 
 function Header() {

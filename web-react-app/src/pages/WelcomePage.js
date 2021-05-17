@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import styled from "styled-components";
-import Image from "../images/oliver-schwendener-9lcWCCRXiKU-unsplash.jpg";
+import Image from "../images/mattias-olsson-nQz49efZEFs-unsplash.jpg";
 
 const Page = styled.div`
   height: 100vh;

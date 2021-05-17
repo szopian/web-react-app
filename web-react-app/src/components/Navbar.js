@@ -19,6 +19,8 @@ const Nav = styled.div`
   padding-right: 0.5em;
   padding-left: 0;
   margin: 0 auto;
+  color: white;
+  }
 `;
 
 const NavItem = styled.a`
@@ -27,6 +29,10 @@ const NavItem = styled.a`
   margin: 0 auto;
   cursor: pointer;
   padding: 5px;
+
+  &:hover {
+    color: black;
+    opacity: 0.6;
 `;
 
 // &:hover ${Page} {

@@ -31,8 +31,8 @@ const NavItem = styled.a`
   padding: 5px;
 
   &:hover {
-    color: black;
-    opacity: 0.6;
+    opacity: 0.4;
+  }
 `;
 
 // &:hover ${Page} {

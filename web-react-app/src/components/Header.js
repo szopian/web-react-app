@@ -18,6 +18,7 @@ const HeaderContainer = styled.div`
   -moz-align-items: center;
   -ms-align-items: center;
   align-items: center;
+  color: white;
 `;
 
 const Logo = styled.div``;
@@ -35,6 +36,10 @@ const List = styled.div`
 
 const ListItem = styled.div`
   padding: 3px;
+
+  &:hover {
+    opacity: 0.6;
+  }
 `;
 
 function Header() {

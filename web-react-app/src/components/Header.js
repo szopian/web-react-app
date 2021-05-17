@@ -36,6 +36,7 @@ const List = styled.div`
 
 const ListItem = styled.div`
   padding: 3px;
+  transition: 0.3s;
 
   &:hover {
     opacity: 0.6;

@@ -29,9 +29,10 @@ const NavItem = styled.a`
   margin: 0 auto;
   cursor: pointer;
   padding: 5px;
+  transition: 0.3s;
 
   &:hover {
-    opacity: 0.4;
+    opacity: 0.5;
   }
 `;
 

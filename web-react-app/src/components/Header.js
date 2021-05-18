@@ -41,7 +41,8 @@ const ListItem = styled.div`
   transition: 0.3s;
 
   &:hover {
-    opacity: 0.6;
+    opacity: 0.8;
+    transform: translateY(-5px);
   }
 `;
 

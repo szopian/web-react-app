@@ -34,6 +34,10 @@ const List = styled.div`
   min-width: -webkit-min-content;
   min-width: min-content;
   cursor: pointer;
+
+  &:hover {
+    color: #a4a4a4;
+  }
 `;
 
 const ListItem = styled.div`
@@ -41,7 +45,8 @@ const ListItem = styled.div`
   transition: 0.3s;
 
   &:hover {
-    opacity: 0.6;
+    transform: translateY(-5px);
+    color: #fff;
   }
 `;
 

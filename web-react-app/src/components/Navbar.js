@@ -20,19 +20,22 @@ const Nav = styled.div`
   padding-left: 0;
   margin: 0 auto;
   color: white;
+  position: relative;
   }
 `;
 
 const NavItem = styled.a`
   display: block;
-  position: relative;
   margin: 0 auto;
   cursor: pointer;
   padding: 5px;
-  transition: 0.3s;
 
-  &:hover {
-    opacity: 0.5;
+  span {
+    transition: 0.3s;
+
+    &:hover {
+      opacity: 0.5;
+    }
   }
 `;
 
@@ -45,10 +48,18 @@ function Navbar() {
   return (
     <NavbarContainer>
       <Nav>
-        <NavItem>About</NavItem>
-        <NavItem>Home</NavItem>
-        <NavItem>Products</NavItem>
-        <NavItem>Work</NavItem>
+        <NavItem>
+          <span>About</span>
+        </NavItem>
+        <NavItem>
+          <span>Home</span>
+        </NavItem>
+        <NavItem>
+          <span>Products</span>
+        </NavItem>
+        <NavItem>
+          <span>Work</span>
+        </NavItem>
       </Nav>
     </NavbarContainer>
   );

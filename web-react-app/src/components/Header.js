@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import { FiTwitter } from "react-icons/fi";
+
 const HeaderContainer = styled.div`
   z-index: 1100;
   position: fixed;
@@ -50,7 +52,9 @@ function Header() {
       <List>
         <ListItem>Face</ListItem>
         <ListItem>Insta</ListItem>
-        <ListItem>Twit</ListItem>
+        <ListItem>
+          <FiTwitter />
+        </ListItem>
       </List>
     </HeaderContainer>
   );

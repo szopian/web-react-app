@@ -20,12 +20,12 @@ const Nav = styled.div`
   padding-left: 0;
   margin: 0 auto;
   color: white;
+  position: relative;
   }
 `;
 
 const NavItem = styled.a`
   display: block;
-  position: relative;
   margin: 0 auto;
   cursor: pointer;
   padding: 5px;

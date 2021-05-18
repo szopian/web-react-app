@@ -36,7 +36,7 @@ const List = styled.div`
   cursor: pointer;
 
   &:hover {
-    color: grey;
+    color: #a4a4a4;
   }
 `;
 
@@ -46,7 +46,7 @@ const ListItem = styled.div`
 
   &:hover {
     transform: translateY(-5px);
-    color: white;
+    color: #fff;
   }
 `;
 

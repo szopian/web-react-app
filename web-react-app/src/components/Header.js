@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+import { FiTwitter, FiInstagram, FiFacebook, FiMail } from "react-icons/fi";
+
 const HeaderContainer = styled.div`
   z-index: 1100;
   position: fixed;
@@ -18,6 +20,7 @@ const HeaderContainer = styled.div`
   -moz-align-items: center;
   -ms-align-items: center;
   align-items: center;
+  color: white;
 `;
 
 const Logo = styled.div``;
@@ -35,6 +38,11 @@ const List = styled.div`
 
 const ListItem = styled.div`
   padding: 3px;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.6;
+  }
 `;
 
 function Header() {
@@ -42,9 +50,18 @@ function Header() {
     <HeaderContainer>
       <Logo>LOGO</Logo>
       <List>
-        <ListItem>Face</ListItem>
-        <ListItem>Insta</ListItem>
-        <ListItem>Twit</ListItem>
+        <ListItem>
+          <FiFacebook />
+        </ListItem>
+        <ListItem>
+          <FiInstagram />
+        </ListItem>
+        <ListItem>
+          <FiTwitter />
+        </ListItem>
+        <ListItem>
+          <FiMail />
+        </ListItem>
       </List>
     </HeaderContainer>
   );

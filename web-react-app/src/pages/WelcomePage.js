@@ -71,7 +71,7 @@ function WelcomePage() {
     display: block;
     margin: 0 auto;
     cursor: pointer;
-    padding: 15px;
+    padding: 5px;
   `;
 
   const NavLink = styled.a`
@@ -84,9 +84,9 @@ function WelcomePage() {
 
   return (
     <Page>
-      <Overlay />
+      <Overlay onMouseEnter={() => setStyle(Image)} />
       <Header />
-      <NavbarContainer onMouseOut={() => setStyle(Image)}>
+      <NavbarContainer>
         <Nav>
           <NavItem>
             <NavLink onMouseEnter={() => setStyle(Image1)}>About</NavLink>

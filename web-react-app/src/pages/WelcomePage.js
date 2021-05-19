@@ -39,7 +39,9 @@ function WelcomePage() {
     background: linear-gradient(red, transparent),
       linear-gradient(to top left, lime, transparent),
       linear-gradient(to top right, blue, transparent);
+
     mix-blend-mode: overlay;
+    background-blend-mode: screen;
   `;
 
   const NavbarContainer = styled.div`

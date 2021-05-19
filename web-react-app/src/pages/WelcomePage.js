@@ -4,10 +4,10 @@ import styled from "styled-components";
 import Image from "../images/mattias-olsson-nQz49efZEFs-unsplash.jpg";
 import Image1 from "../images/adam-adams-mrl0Gr8Y20s-unsplash.jpg";
 import Image2 from "../images/j-gowell-Lp8wAUBB1x8-unsplash.jpg";
-import Image3 from "../images/jasmina-rojko-BafqvRBFGfU-unsplash.jpg";
+// import Image3 from "../images/jasmina-rojko-BafqvRBFGfU-unsplash.jpg";
 import Image4 from "../images/ostap-senyuk-SW4BTHmSGQg-unsplash.jpg";
 // import Image5 from "../images/patrick-tomasso-6nDc17j4x98-unsplash.jpg";
-// import Image6 from "../images/robson-hatsukami-morgan-5C6veSN6hec-unsplash.jpg";
+import Image6 from "../images/robson-hatsukami-morgan-5C6veSN6hec-unsplash.jpg";
 // import Image7 from "../images/yann-allegre-yGprtDYbyoE-unsplash.jpg";
 
 function WelcomePage() {
@@ -53,19 +53,18 @@ function WelcomePage() {
   `;
 
   const Nav = styled.nav`
-  font-size: 40px;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: -0.02em;
-  line-height: 1em;
-  text-transform: none;
-  padding-right: 0.5em;
-  padding-left: 0;
-  margin: 0 auto;
-  color: white;
-  position: relative;
-  }
-`;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: -0.02em;
+    line-height: 1em;
+    text-transform: none;
+    padding-right: 0.5em;
+    padding-left: 0;
+    margin: 0 auto;
+    color: white;
+    position: relative;
+  `;
 
   const NavItem = styled.div`
     display: block;
@@ -89,7 +88,7 @@ function WelcomePage() {
         <Nav>
           <NavItem>
             <NavLink
-              onMouseEnter={() => setStyle(Image1)}
+              onMouseEnter={() => setStyle(Image4)}
               onMouseOut={() => setStyle(Image)}
             >
               About
@@ -97,7 +96,7 @@ function WelcomePage() {
           </NavItem>
           <NavItem>
             <NavLink
-              onMouseEnter={() => setStyle(Image2)}
+              onMouseEnter={() => setStyle(Image6)}
               onMouseOut={() => setStyle(Image)}
             >
               Home
@@ -105,7 +104,7 @@ function WelcomePage() {
           </NavItem>
           <NavItem>
             <NavLink
-              onMouseEnter={() => setStyle(Image3)}
+              onMouseEnter={() => setStyle(Image2)}
               onMouseOut={() => setStyle(Image)}
             >
               Products
@@ -113,7 +112,7 @@ function WelcomePage() {
           </NavItem>
           <NavItem>
             <NavLink
-              onMouseEnter={() => setStyle(Image4)}
+              onMouseEnter={() => setStyle(Image1)}
               onMouseOut={() => setStyle(Image)}
             >
               Work

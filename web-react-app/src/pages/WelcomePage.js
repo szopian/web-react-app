@@ -70,12 +70,12 @@ function WelcomePage() {
   const NavItem = styled.div`
     display: block;
     margin: 0 auto;
-    cursor: pointer;
     padding: 5px;
   `;
 
   const NavLink = styled.a`
     transition: 0.3s;
+    cursor: pointer;
 
     &:hover {
       opacity: 0.5;

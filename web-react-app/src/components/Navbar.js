@@ -9,7 +9,7 @@ const NavbarContainer = styled.div`
   width: calc(100% - 13.5vw);
 `;
 
-const Nav = styled.div`
+const Nav = styled.nav`
   font-size: 40px;
   font-weight: 400;
   font-style: normal;
@@ -24,41 +24,36 @@ const Nav = styled.div`
   }
 `;
 
-const NavItem = styled.a`
+const NavItem = styled.div`
   display: block;
   margin: 0 auto;
   cursor: pointer;
   padding: 5px;
-
-  span {
-    transition: 0.3s;
-
-    &:hover {
-      opacity: 0.5;
-    }
-  }
 `;
 
-// &:hover ${Page} {
-//   background-image: none;
-// }
-//
+const NavLink = styled.a`
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.5;
+  }
+`;
 
 function Navbar() {
   return (
     <NavbarContainer>
       <Nav>
         <NavItem>
-          <span>About</span>
+          <NavLink>About</NavLink>
         </NavItem>
         <NavItem>
-          <span>Home</span>
+          <NavLink>Home</NavLink>
         </NavItem>
         <NavItem>
-          <span>Products</span>
+          <NavLink>Products</NavLink>
         </NavItem>
         <NavItem>
-          <span>Work</span>
+          <NavLink>Work</NavLink>
         </NavItem>
       </Nav>
     </NavbarContainer>

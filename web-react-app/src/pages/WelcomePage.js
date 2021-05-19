@@ -36,7 +36,9 @@ function WelcomePage() {
     /*background: rgba(0, 0, 0, 0.2);*/
 
     /* changes vido view */
-    background: black;
+    background: linear-gradient(red, transparent),
+      linear-gradient(to top left, lime, transparent),
+      linear-gradient(to top right, blue, transparent);
     mix-blend-mode: overlay;
   `;
 

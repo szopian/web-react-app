@@ -23,6 +23,21 @@ function WelcomePage() {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    transition: 0.3s;
+  `;
+
+  const Overlay = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /*background: rgba(0, 0, 0, 0.2);*/
+
+    /* changes vido view */
+    background: black;
+    mix-blend-mode: overlay;
   `;
 
   const NavbarContainer = styled.div`
@@ -52,7 +67,7 @@ function WelcomePage() {
     display: block;
     margin: 0 auto;
     cursor: pointer;
-    padding: 5px;
+    padding: 15px;
   `;
 
   const NavLink = styled.a`
@@ -65,40 +80,21 @@ function WelcomePage() {
 
   return (
     <Page>
+      <Overlay />
       <Header />
-      <NavbarContainer>
+      <NavbarContainer onMouseOut={() => setStyle(Image)}>
         <Nav>
           <NavItem>
-            <NavLink
-              onMouseEnter={() => setStyle(Image1)}
-              onMouseOut={() => setStyle(Image)}
-            >
-              About
-            </NavLink>
+            <NavLink onMouseEnter={() => setStyle(Image1)}>About</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink
-              onMouseEnter={() => setStyle(Image2)}
-              onMouseOut={() => setStyle(Image)}
-            >
-              Home
-            </NavLink>
+            <NavLink onMouseEnter={() => setStyle(Image2)}>Home</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink
-              onMouseEnter={() => setStyle(Image3)}
-              onMouseOut={() => setStyle(Image)}
-            >
-              Products
-            </NavLink>
+            <NavLink onMouseEnter={() => setStyle(Image3)}>Products</NavLink>
           </NavItem>
           <NavItem>
-            <NavLink
-              onMouseEnter={() => setStyle(Image4)}
-              onMouseOut={() => setStyle(Image)}
-            >
-              Work
-            </NavLink>
+            <NavLink onMouseEnter={() => setStyle(Image4)}>Work</NavLink>
           </NavItem>
         </Nav>
       </NavbarContainer>

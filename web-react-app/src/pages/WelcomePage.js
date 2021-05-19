@@ -6,9 +6,9 @@ import Image1 from "../images/adam-adams-mrl0Gr8Y20s-unsplash.jpg";
 import Image2 from "../images/j-gowell-Lp8wAUBB1x8-unsplash.jpg";
 import Image3 from "../images/jasmina-rojko-BafqvRBFGfU-unsplash.jpg";
 import Image4 from "../images/ostap-senyuk-SW4BTHmSGQg-unsplash.jpg";
-import Image5 from "../images/patrick-tomasso-6nDc17j4x98-unsplash.jpg";
-import Image6 from "../images/robson-hatsukami-morgan-5C6veSN6hec-unsplash.jpg";
-import Image7 from "../images/yann-allegre-yGprtDYbyoE-unsplash.jpg";
+// import Image5 from "../images/patrick-tomasso-6nDc17j4x98-unsplash.jpg";
+// import Image6 from "../images/robson-hatsukami-morgan-5C6veSN6hec-unsplash.jpg";
+// import Image7 from "../images/yann-allegre-yGprtDYbyoE-unsplash.jpg";
 
 function WelcomePage() {
   const [backgroundImage, setBackgroundImage] = useState(Image);
@@ -69,16 +69,36 @@ function WelcomePage() {
       <NavbarContainer>
         <Nav>
           <NavItem>
-            <NavLink onMouseEnter={() => setStyle()}>About</NavLink>
+            <NavLink
+              onMouseEnter={() => setStyle(Image1)}
+              onMouseOut={() => setStyle(Image)}
+            >
+              About
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink>Home</NavLink>
+            <NavLink
+              onMouseEnter={() => setStyle(Image2)}
+              onMouseOut={() => setStyle(Image)}
+            >
+              Home
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink>Products</NavLink>
+            <NavLink
+              onMouseEnter={() => setStyle(Image3)}
+              onMouseOut={() => setStyle(Image)}
+            >
+              Products
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink>Work</NavLink>
+            <NavLink
+              onMouseEnter={() => setStyle(Image4)}
+              onMouseOut={() => setStyle(Image)}
+            >
+              Work
+            </NavLink>
           </NavItem>
         </Nav>
       </NavbarContainer>

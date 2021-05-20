@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 import Image from "../images/mattias-olsson-nQz49efZEFs-unsplash.jpg";
 
@@ -55,13 +56,10 @@ function WelcomePage() {
     font-size: 40px;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: -0.02em;
     line-height: 1em;
-    text-transform: none;
     padding-right: 0.5em;
     padding-left: 0;
     margin: 0 auto;
-    color: white;
     position: relative;
   `;
 
@@ -70,10 +68,13 @@ function WelcomePage() {
     margin: 0 auto;
   `;
 
-  const NavLink = styled.a`
+  const NavLink = styled(Link)`
+    color: white;
     transition: 0.3s;
     cursor: pointer;
     text-shadow: 1.5px 1.5px #000;
+    text-decoration: none;
+    letter-spacing: -0.02em;
 
     &:hover {
       opacity: 0.5;
@@ -88,6 +89,7 @@ function WelcomePage() {
         <Nav>
           <NavItem>
             <NavLink
+              to="/about"
               onMouseEnter={() => setStyle(AboutImage)}
               onMouseOut={() => setStyle(Image)}
             >
@@ -96,6 +98,7 @@ function WelcomePage() {
           </NavItem>
           <NavItem>
             <NavLink
+              to="/home"
               onMouseEnter={() => setStyle(HomeImage)}
               onMouseOut={() => setStyle(Image)}
             >
@@ -104,6 +107,7 @@ function WelcomePage() {
           </NavItem>
           <NavItem>
             <NavLink
+              to="/products"
               onMouseEnter={() => setStyle(ProductImage)}
               onMouseOut={() => setStyle(Image)}
             >
@@ -112,6 +116,7 @@ function WelcomePage() {
           </NavItem>
           <NavItem>
             <NavLink
+              to="/work"
               onMouseEnter={() => setStyle(WorkImage)}
               onMouseOut={() => setStyle(Image)}
             >

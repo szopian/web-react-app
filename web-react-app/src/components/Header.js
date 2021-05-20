@@ -23,7 +23,9 @@ const HeaderContainer = styled.div`
   color: white;
 `;
 
-const Logo = styled.div``;
+const Logo = styled.div`
+  cursor: pointer;
+`;
 
 const List = styled.div`
   display: flex;

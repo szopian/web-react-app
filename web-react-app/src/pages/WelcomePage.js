@@ -23,7 +23,6 @@ function WelcomePage() {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    transition: 0.3s;
   `;
 
   const Overlay = styled.div`

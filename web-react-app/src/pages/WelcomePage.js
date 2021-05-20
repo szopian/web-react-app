@@ -34,7 +34,7 @@ function WelcomePage() {
 
     /*background: rgba(0, 0, 0, 0.2);*/
 
-    /* changes vido view */
+    /* changes images view */
     background: linear-gradient(red, transparent),
       linear-gradient(to top left, lime, transparent),
       linear-gradient(to top right, blue, transparent);
@@ -73,6 +73,7 @@ function WelcomePage() {
   const NavLink = styled.a`
     transition: 0.3s;
     cursor: pointer;
+    text-shadow: 1.5px 1.5px #000;
 
     &:hover {
       opacity: 0.5;

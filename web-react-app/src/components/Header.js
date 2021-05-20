@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
+import { Link } from "react-router-dom";
 import { FiTwitter, FiInstagram, FiFacebook, FiMail } from "react-icons/fi";
 
 const HeaderContainer = styled.div`
@@ -23,7 +24,11 @@ const HeaderContainer = styled.div`
   color: white;
 `;
 
-const Logo = styled.div``;
+const Logo = styled(Link)`
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+`;
 
 const List = styled.div`
   display: flex;
@@ -53,7 +58,7 @@ const ListItem = styled.div`
 function Header() {
   return (
     <HeaderContainer>
-      <Logo>LOGO</Logo>
+      <Logo to="/">LOGO</Logo>
       <List>
         <ListItem>
           <FiFacebook />

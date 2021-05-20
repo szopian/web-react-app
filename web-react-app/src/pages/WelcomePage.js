@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
+
 import Image from "../images/mattias-olsson-nQz49efZEFs-unsplash.jpg";
-import Image1 from "../images/adam-adams-mrl0Gr8Y20s-unsplash.jpg";
-import Image2 from "../images/j-gowell-Lp8wAUBB1x8-unsplash.jpg";
-import Image3 from "../images/jasmina-rojko-BafqvRBFGfU-unsplash.jpg";
-import Image4 from "../images/ostap-senyuk-SW4BTHmSGQg-unsplash.jpg";
-// import Image5 from "../images/patrick-tomasso-6nDc17j4x98-unsplash.jpg";
-// import Image6 from "../images/robson-hatsukami-morgan-5C6veSN6hec-unsplash.jpg";
-// import Image7 from "../images/yann-allegre-yGprtDYbyoE-unsplash.jpg";
+
+import AboutImage from "../images/ostap-senyuk-SW4BTHmSGQg-unsplash.jpg";
+import HomeImage from "../images/robson-hatsukami-morgan-5C6veSN6hec-unsplash.jpg";
+import ProductImage from "../images/j-gowell-Lp8wAUBB1x8-unsplash.jpg";
+import WorkImage from "../images/adam-adams-mrl0Gr8Y20s-unsplash.jpg";
 
 function WelcomePage() {
   const [backgroundImage, setBackgroundImage] = useState(Image);
@@ -23,7 +23,6 @@ function WelcomePage() {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    transition: 0.3s;
   `;
 
   const Overlay = styled.div`
@@ -35,7 +34,7 @@ function WelcomePage() {
 
     /*background: rgba(0, 0, 0, 0.2);*/
 
-    /* changes vido view */
+    /* changes images view */
     background: linear-gradient(red, transparent),
       linear-gradient(to top left, lime, transparent),
       linear-gradient(to top right, blue, transparent);
@@ -53,29 +52,28 @@ function WelcomePage() {
   `;
 
   const Nav = styled.nav`
-  font-size: 40px;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: -0.02em;
-  line-height: 1em;
-  text-transform: none;
-  padding-right: 0.5em;
-  padding-left: 0;
-  margin: 0 auto;
-  color: white;
-  position: relative;
-  }
-`;
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1em;
+    padding-right: 0.5em;
+    padding-left: 0;
+    margin: 0 auto;
+    position: relative;
+  `;
 
   const NavItem = styled.div`
     display: block;
     margin: 0 auto;
-    cursor: pointer;
-    padding: 5px;
   `;
 
-  const NavLink = styled.a`
+  const NavLink = styled(Link)`
+    color: white;
     transition: 0.3s;
+    cursor: pointer;
+    text-shadow: 1.5px 1.5px #000;
+    text-decoration: none;
+    letter-spacing: -0.02em;
 
     &:hover {
       opacity: 0.5;
@@ -84,21 +82,45 @@ function WelcomePage() {
 
   return (
     <Page>
-      <Overlay onMouseEnter={() => setStyle(Image)} />
+      <Overlay />
       <Header />
       <NavbarContainer>
         <Nav>
           <NavItem>
-            <NavLink onMouseEnter={() => setStyle(Image1)}>About</NavLink>
+            <NavLink
+              to="/about"
+              onMouseEnter={() => setStyle(AboutImage)}
+              onMouseOut={() => setStyle(Image)}
+            >
+              About
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink onMouseEnter={() => setStyle(Image2)}>Home</NavLink>
+            <NavLink
+              to="/home"
+              onMouseEnter={() => setStyle(HomeImage)}
+              onMouseOut={() => setStyle(Image)}
+            >
+              Home
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink onMouseEnter={() => setStyle(Image3)}>Products</NavLink>
+            <NavLink
+              to="/products"
+              onMouseEnter={() => setStyle(ProductImage)}
+              onMouseOut={() => setStyle(Image)}
+            >
+              Products
+            </NavLink>
           </NavItem>
           <NavItem>
-            <NavLink onMouseEnter={() => setStyle(Image4)}>Work</NavLink>
+            <NavLink
+              to="/work"
+              onMouseEnter={() => setStyle(WorkImage)}
+              onMouseOut={() => setStyle(Image)}
+            >
+              Work
+            </NavLink>
           </NavItem>
         </Nav>
       </NavbarContainer>

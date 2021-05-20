@@ -1,10 +1,20 @@
 import React from "react";
+import Header from "../components/Header";
+import styled from "styled-components";
+
+const Page = styled.div`
+  background: #000;
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+`;
 
 function About() {
   return (
-    <div>
+    <Page>
+      <Header />
       <h1> Hi About!!</h1>
-    </div>
+    </Page>
   );
 }
 

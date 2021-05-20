@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import Header from "../components/Header";
 import styled from "styled-components";
+
 import Image from "../images/mattias-olsson-nQz49efZEFs-unsplash.jpg";
-import Image1 from "../images/adam-adams-mrl0Gr8Y20s-unsplash.jpg";
-import Image2 from "../images/j-gowell-Lp8wAUBB1x8-unsplash.jpg";
-// import Image3 from "../images/jasmina-rojko-BafqvRBFGfU-unsplash.jpg";
-import Image4 from "../images/ostap-senyuk-SW4BTHmSGQg-unsplash.jpg";
-// import Image5 from "../images/patrick-tomasso-6nDc17j4x98-unsplash.jpg";
-import Image6 from "../images/robson-hatsukami-morgan-5C6veSN6hec-unsplash.jpg";
-// import Image7 from "../images/yann-allegre-yGprtDYbyoE-unsplash.jpg";
+
+import AboutImage from "../images/ostap-senyuk-SW4BTHmSGQg-unsplash.jpg";
+import HomeImage from "../images/robson-hatsukami-morgan-5C6veSN6hec-unsplash.jpg";
+import ProductImage from "../images/j-gowell-Lp8wAUBB1x8-unsplash.jpg";
+import WorkImage from "../images/adam-adams-mrl0Gr8Y20s-unsplash.jpg";
 
 function WelcomePage() {
   const [backgroundImage, setBackgroundImage] = useState(Image);
@@ -88,7 +87,7 @@ function WelcomePage() {
         <Nav>
           <NavItem>
             <NavLink
-              onMouseEnter={() => setStyle(Image4)}
+              onMouseEnter={() => setStyle(AboutImage)}
               onMouseOut={() => setStyle(Image)}
             >
               About
@@ -96,7 +95,7 @@ function WelcomePage() {
           </NavItem>
           <NavItem>
             <NavLink
-              onMouseEnter={() => setStyle(Image6)}
+              onMouseEnter={() => setStyle(HomeImage)}
               onMouseOut={() => setStyle(Image)}
             >
               Home
@@ -104,7 +103,7 @@ function WelcomePage() {
           </NavItem>
           <NavItem>
             <NavLink
-              onMouseEnter={() => setStyle(Image2)}
+              onMouseEnter={() => setStyle(ProductImage)}
               onMouseOut={() => setStyle(Image)}
             >
               Products
@@ -112,7 +111,7 @@ function WelcomePage() {
           </NavItem>
           <NavItem>
             <NavLink
-              onMouseEnter={() => setStyle(Image1)}
+              onMouseEnter={() => setStyle(WorkImage)}
               onMouseOut={() => setStyle(Image)}
             >
               Work

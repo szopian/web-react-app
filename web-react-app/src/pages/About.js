@@ -42,6 +42,7 @@ function About() {
         <Header />
         <Text></Text>
       </Page>
+      <Page />
     </div>
   );
 }

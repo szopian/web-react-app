@@ -24,11 +24,11 @@ const HeaderContainer = styled.header`
   align-items: center;
   color: white;
 
-  .shadow {
-    box-shadow: 0 9px 9px -9px rgba(0, 0, 0, 0.13);
+  &&&.shadow {
+    box-shadow: 0 9px 9px -9px rgba(255, 255, 255, 0.6);
   }
 
-  .hidden {
+  &&&.hidden {
     transform: translateY(-110%);
   }
 `;

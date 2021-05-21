@@ -1,7 +1,0 @@
-.shadow {
-  box-shadow: 0 9px 9px -9px rgba(255, 255, 255, 0.4);
-}
-
-.hidden {
-  transform: translateY(-110%);
-}

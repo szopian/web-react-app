@@ -1,6 +1,5 @@
 import GlobalStyle from "./globalStyle";
 import WelcomePage from "./pages/WelcomePage";
-import "./index.css";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import About from "./pages/About";

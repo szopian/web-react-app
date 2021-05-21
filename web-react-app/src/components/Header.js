@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { FiTwitter, FiInstagram, FiFacebook, FiMail } from "react-icons/fi";
 import useDocumentScrollThrottled from "../utility/useDocumentScrollThrottled.js";
 
-const HeaderContainer = styled.div`
+const HeaderContainer = styled.header`
   z-index: 1100;
   position: fixed;
   top: 0;
@@ -24,11 +24,11 @@ const HeaderContainer = styled.div`
   align-items: center;
   color: white;
 
-  .shadow {
-    box-shadow: 0 9px 9px -9px rgba(0, 0, 0, 0.13);
+  &&&.shadow {
+    box-shadow: 0 9px 9px -9px rgba(255, 255, 255, 0.6);
   }
 
-  .hidden {
+  &&&.hidden {
     transform: translateY(-110%);
   }
 `;

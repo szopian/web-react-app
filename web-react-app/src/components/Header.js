@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 
 import { Link } from "react-router-dom";
 import { FiTwitter, FiInstagram, FiFacebook, FiMail } from "react-icons/fi";
+import useDocumentScrollThrottled from "../utility/useDocumentScrollThrottled.js";
 
 const HeaderContainer = styled.div`
   z-index: 1100;
@@ -22,6 +23,14 @@ const HeaderContainer = styled.div`
   -ms-align-items: center;
   align-items: center;
   color: white;
+
+  .shadow {
+    box-shadow: 0 9px 9px -9px rgba(0, 0, 0, 0.13);
+  }
+
+  .hidden {
+    transform: translateY(-110%);
+  }
 `;
 
 const Logo = styled(Link)`
@@ -56,8 +65,29 @@ const ListItem = styled.div`
 `;
 
 function Header() {
+  const [shouldHideHeader, setShouldHideHeader] = useState(false);
+  const [shouldShowShadow, setShouldShowShadow] = useState(false);
+
+  const MINIMUM_SCROLL = 40;
+  const TIMEOUT_DELAY = 300;
+
+  useDocumentScrollThrottled((callbackData) => {
+    const { previousScrollTop, currentScrollTop } = callbackData;
+    const isScrolledDown = previousScrollTop < currentScrollTop;
+    const isMinimumScrolled = currentScrollTop > MINIMUM_SCROLL;
+
+    setShouldShowShadow(currentScrollTop > 2);
+
+    setTimeout(() => {
+      setShouldHideHeader(isScrolledDown && isMinimumScrolled);
+    }, TIMEOUT_DELAY);
+  });
+
+  const shadowStyle = shouldShowShadow ? "shadow" : "";
+  const hiddenStyle = shouldHideHeader ? "hidden" : "";
+
   return (
-    <HeaderContainer>
+    <HeaderContainer className={`header ${shadowStyle} ${hiddenStyle}`}>
       <Logo to="/">LOGO</Logo>
       <List>
         <ListItem>

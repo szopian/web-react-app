@@ -5,7 +5,7 @@ import Image from "../images/j-gowell-Lp8wAUBB1x8-unsplash.jpg";
 
 const Page = styled.div`
   background: #000;
-  height: 100vh;
+  height: 200vh;
   width: 100%;
   color: #fff;
   background-image: url(${Image});

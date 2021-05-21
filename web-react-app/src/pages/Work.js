@@ -5,7 +5,7 @@ import Image from "../images/adam-adams-mrl0Gr8Y20s-unsplash.jpg";
 
 const Page = styled.div`
   background: #000;
-  height: 100vh;
+  height: 200vh;
   width: 100%;
   color: #fff;
   background-image: url(${Image});

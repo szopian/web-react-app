@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import styled from "styled-components";
 import Image from "../images/robson-hatsukami-morgan-5C6veSN6hec-unsplash.jpg";
+import Title from "../components/Title";
 
 const Page = styled.div`
   background: #000;
@@ -20,7 +21,7 @@ const Overlay = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.7);
 
   /* changes images view 
   background: linear-gradient(red, transparent),
@@ -32,14 +33,12 @@ const Overlay = styled.div`
   background-blend-mode: screen;
 `;
 
-const Text = styled.div``;
-
 function Home() {
   return (
     <Page>
       <Overlay />
       <Header />
-      <Text></Text>
+      <Title title="Home" />
     </Page>
   );
 }

@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import styled from "styled-components";
 import Image from "../images/adam-adams-mrl0Gr8Y20s-unsplash.jpg";
+import Title from "../components/Title";
 
 const Page = styled.div`
   background: #000;
@@ -32,14 +33,12 @@ const Overlay = styled.div`
   background-blend-mode: screen;
 `;
 
-const Text = styled.div``;
-
 function Work() {
   return (
     <Page>
       <Overlay />
       <Header />
-      <Text></Text>
+      <Title title="Work" />
     </Page>
   );
 }

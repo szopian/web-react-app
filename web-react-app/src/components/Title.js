@@ -18,11 +18,7 @@ const TitleText = styled.div`
 `;
 
 const Title = ({ title }) => {
-  return (
-    <TitleText>
-      <h1>{title}</h1>
-    </TitleText>
-  );
+  return <TitleText>{title}</TitleText>;
 };
 
 export default Title;

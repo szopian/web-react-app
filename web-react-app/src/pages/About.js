@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Image from "../images/ostap-senyuk-SW4BTHmSGQg-unsplash.jpg";
 
 import Title from "../components/Title";
+import Text from "../components/Text";
 
 const Page = styled.div`
   background: #000;
@@ -41,6 +42,7 @@ const About = () => {
         <Overlay />
         <Header />
         <Title title="About" />
+        <Text text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, facere eum, accusamus iusto soluta reiciendis ipsum voluptates ad perspiciatis alias esse voluptatem natus debitis a unde numquam, exercitationem modi delectus?" />
       </Page>
     </div>
   );

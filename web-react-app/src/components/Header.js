@@ -3,6 +3,8 @@ import styled from "styled-components";
 
 import { Link } from "react-router-dom";
 import { FiTwitter, FiInstagram, FiFacebook, FiMail } from "react-icons/fi";
+import { rotate } from "../animations/animation";
+
 import useDocumentScrollThrottled from "../utility/useDocumentScrollThrottled.js";
 
 const HeaderContainer = styled.header`
@@ -37,6 +39,7 @@ const Logo = styled(Link)`
   cursor: pointer;
   text-decoration: none;
   color: #fff;
+  animation: ${rotate} 2s linear infinite;
 `;
 
 const List = styled.div`

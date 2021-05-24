@@ -3,6 +3,8 @@ import Header from "../components/Header";
 import styled from "styled-components";
 import Image from "../images/ostap-senyuk-SW4BTHmSGQg-unsplash.jpg";
 
+import Title from "../components/Title";
+
 const Page = styled.div`
   background: #000;
   height: 200vh;
@@ -32,28 +34,16 @@ const Overlay = styled.div`
   background-blend-mode: screen;
 `;
 
-const Title = styled.div`
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 50px;
-  background: #000;
-  padding: 5px 10px;
-  blur: 5px;
-`;
-
-function About() {
+const About = () => {
   return (
     <div>
       <Page>
         <Overlay />
         <Header />
-        <Title>What about us?!</Title>
+        <Title title="About" />
       </Page>
     </div>
   );
-}
+};
 
 export default About;

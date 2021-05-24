@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import styled from "styled-components";
 import Image from "../images/adam-adams-mrl0Gr8Y20s-unsplash.jpg";
 import Title from "../components/Title";
+import Text from "../components/Text";
 
 const Page = styled.div`
   background: #000;
@@ -39,6 +40,7 @@ function Work() {
       <Overlay />
       <Header />
       <Title title="Work" />
+      <Text text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, facere eum, accusamus iusto soluta reiciendis ipsum voluptates ad perspiciatis alias esse voluptatem natus debitis a unde numquam, exercitationem modi delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, facere eum, accusamus iusto soluta reiciendis ipsum voluptates ad perspiciatis alias esse voluptatem natus debitis a unde numquam, exercitationem modi delectus?" />
     </Page>
   );
 }

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const TitleText = styled.h1`
-  margin: 0;
+  margin: 20px;
   position: absolute;
   top: 50%;
   left: 33%;

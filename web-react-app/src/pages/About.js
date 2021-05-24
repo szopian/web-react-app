@@ -3,6 +3,8 @@ import Header from "../components/Header";
 import styled from "styled-components";
 import Image from "../images/ostap-senyuk-SW4BTHmSGQg-unsplash.jpg";
 
+import Title from "../components/Title";
+
 const Page = styled.div`
   background: #000;
   height: 200vh;
@@ -32,18 +34,16 @@ const Overlay = styled.div`
   background-blend-mode: screen;
 `;
 
-const Text = styled.div``;
-
-function About() {
+const About = () => {
   return (
     <div>
       <Page>
         <Overlay />
         <Header />
-        <Text></Text>
+        <Title title="About" />
       </Page>
     </div>
   );
-}
+};
 
 export default About;

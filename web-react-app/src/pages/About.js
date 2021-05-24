@@ -32,7 +32,17 @@ const Overlay = styled.div`
   background-blend-mode: screen;
 `;
 
-const Text = styled.div``;
+const Title = styled.div`
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  background: #000;
+  padding: 5px 10px;
+  blur: 5px;
+`;
 
 function About() {
   return (
@@ -40,7 +50,7 @@ function About() {
       <Page>
         <Overlay />
         <Header />
-        <Text></Text>
+        <Title>What about us?!</Title>
       </Page>
     </div>
   );

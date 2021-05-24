@@ -8,10 +8,13 @@ const TitleText = styled.div`
   left: 33%;
   transform: translate(-50%, -50%);
   font-size: 50px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background: linear-gradient(transparent 50%, rgba(0, 0, 0, 0.85) 50%);
   padding: 20px;
   blur: 5px;
   text-transform: uppercase;
+  border-radius: 0px 50px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 2px #000;
 `;
 
 const Title = ({ title }) => {

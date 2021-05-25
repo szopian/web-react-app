@@ -7,7 +7,7 @@ import Title from "../components/Title";
 
 const Page = styled.div`
   background: #000;
-  height: 200vh;
+  height: 100%;
   width: 100%;
   color: #fff;
   background-image: url(${Image});
@@ -38,38 +38,50 @@ const Section = styled.div`
   height: 100vh;
 `;
 
-const Row = styled.div`
-  display: flex;
+const CardGrid = styled.div`
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  background: #000;
+  height: 100%;
 
-  &&&:after {
-    content: "";
-    display: table;
-    clear: both;
+  @media (min-width: 500px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 900px) {
+    grid-template-columns: repeat(3, 1fr);
   }
 `;
 
-const Column = styled.div`
-  float: left;
-  width: 50%;
+const Card = styled.div`
+  border: 1px solid #ccc;
+  border-radius: 5px;
   padding: 10px 10px;
   margin: 10px;
-  height: 300px;
   border-radius: 0px 50px;
   background-color: rgb(255, 255, 255, 0.83);
+  color: #000;
 `;
 
-const ColumnImage = styled.div`
-  float: left;
-  width: 50%;
+const ImageCard = styled.div`
+  border: 1px solid #ccc;
+  border-radius: 5px;
   padding: 10px 10px;
   margin: 10px;
-  height: 300px;
+  border-radius: 0px 50px;
+
   background-color: rgb(255, 255, 255, 0.83);
   background-image: url(${Image1});
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 `;
+
+const Article = styled.p``;
 
 function Products() {
   return (
@@ -80,14 +92,34 @@ function Products() {
         <Title title="Products" />
       </Section>
       <Section>
-        <Row>
-          <ColumnImage>bla bla bla </ColumnImage>
-          <Column>bla bla bla</Column>
-        </Row>
-        <Row>
-          <Column>bla bla bla </Column>
-          <ColumnImage>bla bla bla</ColumnImage>
-        </Row>
+        <CardGrid>
+          <ImageCard />
+          <Card>
+            <Article>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit eveniet eligendi hic pariatur, sunt repellendus
+              quidem non nostrum ducimus saepe aut sapiente harum beatae quod
+              mollitia perferendis inventore, temporibus reiciendis. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Reprehenderit eveniet
+              eligendi hic pariatur, sunt repellendus quidem non nostrum ducimus
+              saepe aut sapiente harum beatae quod mollitia perferendis
+              inventore, temporibus reiciendis.
+            </Article>
+          </Card>
+          <Card>
+            <Article>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit eveniet eligendi hic pariatur, sunt repellendus
+              quidem non nostrum ducimus saepe aut sapiente harum beatae quod
+              mollitia perferendis inventore, temporibus reiciendis. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Reprehenderit eveniet
+              eligendi hic pariatur, sunt repellendus quidem non nostrum ducimus
+              saepe aut sapiente harum beatae quod mollitia perferendis
+              inventore, temporibus reiciendis.
+            </Article>
+          </Card>
+          <ImageCard />
+        </CardGrid>
       </Section>
     </Page>
   );

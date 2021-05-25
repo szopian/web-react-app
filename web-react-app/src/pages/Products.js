@@ -39,14 +39,21 @@ const Section = styled.div`
 `;
 
 const CardGrid = styled.div`
-  padding: 1rem;
+  // padding: 1rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
-  max-width: 1000px;
+  // max-width: 1000px;
   margin: auto;
   background: #000;
-  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+
+  position: relative;
+  z-index: 15;
+  max-width: 1732px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4vw 20vw;
 
   @media (min-width: 500px) {
     grid-template-columns: repeat(2, 1fr);

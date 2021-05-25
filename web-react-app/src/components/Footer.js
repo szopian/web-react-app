@@ -1,33 +1,32 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const FooterContainer = styled.div`
-  box-sizing: border-box;
-  width: calc(100% - 13.5vw);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 0;
+  background: #000;
 `;
 
 const FooterNav = styled.div`
-  font-size: 40px;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: -0.02em;
-  line-height: 1em;
-  text-transform: none;
-  padding-right: 0.5em;
-  padding-left: 0;
-  margin: 0 auto;
-  color: white;
+  position: absolute;
+  z-index: 1100;
   display: flex;
 `;
 
 const FooterItem = styled.div`
-  margin: 0 auto;
   cursor: pointer;
   padding: 5px;
+  margin: 0 auto;
+  justify-content: center;
 `;
 
-const FooterLink = styled.div`
+const FooterLink = styled(Link)`
   transition: 0.3s;
+  text-decoration: none;
+  color: white;
 
   &:hover {
     opacity: 0.5;
@@ -39,16 +38,16 @@ function Footer() {
     <FooterContainer>
       <FooterNav>
         <FooterItem>
-          <FooterLink>About</FooterLink>
+          <FooterLink to="/about">About</FooterLink>
         </FooterItem>
         <FooterItem>
-          <FooterLink>Home</FooterLink>
+          <FooterLink to="/home">Home</FooterLink>
         </FooterItem>
         <FooterItem>
-          <FooterLink>Products</FooterLink>
+          <FooterLink to="/products">Products</FooterLink>
         </FooterItem>
         <FooterItem>
-          <FooterLink>Work</FooterLink>
+          <FooterLink to="/work">Work</FooterLink>
         </FooterItem>
       </FooterNav>
     </FooterContainer>

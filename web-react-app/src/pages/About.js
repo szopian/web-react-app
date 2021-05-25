@@ -8,7 +8,6 @@ import Title from "../components/Title";
 import Text from "../components/Text";
 
 const Page = styled.div`
-  background: #000;
   height: 200vh;
   width: 100%;
   color: #fff;

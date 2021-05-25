@@ -7,13 +7,14 @@ const FooterContainer = styled.div`
   bottom: 0;
   width: 100%;
   padding: 40px 0;
-  background: #000;
+  display: flex;
 `;
 
 const FooterNav = styled.div`
-  position: absolute;
   z-index: 1100;
   display: flex;
+  border-right: solid 1px #fff;
+  padding: 0px 40px;
 `;
 
 const FooterItem = styled.div`
@@ -33,9 +34,17 @@ const FooterLink = styled(Link)`
   }
 `;
 
+const CopyRight = styled.p`
+  color: #fff;
+  padding: 10px 50px;
+  font-size: 12px;
+  border-right: solid 1px #fff;
+`;
+
 function Footer() {
   return (
     <FooterContainer>
+      <CopyRight>Copyright © 2021 //GS SZOPIAN</CopyRight>
       <FooterNav>
         <FooterItem>
           <FooterLink to="/about">About</FooterLink>

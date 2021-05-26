@@ -7,40 +7,50 @@ const FooterNav = styled.nav`
   left: 0;
   bottom: 0;
   width: 100%;
-  padding: 40px 0;
+  padding: 0.5rem calc((100vw - 1000px) / 2);
+  height: 100px;
   display: flex;
-`;
-
-const Logo = styled.div`
+  justify-content: space-between;
+  position: relative;
   z-index: 1100;
-  display: flex;
-  padding: 0px 40px;
-  color: #fff;
-`;
-
-const Bars = styled.div`
-  cursor: pointer;
-  padding: 5px;
-  margin: 0 auto;
-  justify-content: center;
-`;
-
-const FooterMenu = styled.div`
-  transition: 0.3s;
-
-  &:hover {
-    opacity: 0.5;
-  }
 `;
 
 const FooterLink = styled(Link)`
   text-decoration: none;
-  color: white;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+
+  &:active {
+    color: pink;
+  }
+`;
+
+const Bars = styled(RiMenu4Line)`
+  display: none;
+  color: #fff;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transoform: translate(-100%, 75%);
+    cursor: pointer;
+    font-size: 1.8rem;
+  }
+`;
+
+const FooterMenu = styled.div`
+  display: flex;
 `;
 
 const CopyRight = styled.p`
   color: #fff;
-  padding: 10px 50px;
+
   font-size: 12px;
 `;
 
@@ -48,7 +58,9 @@ function Footer() {
   return (
     <>
       <FooterNav>
-        <Logo to="/">Logo</Logo>
+        <FooterLink to="/">
+          <h1>Logo</h1>
+        </FooterLink>
         <Bars />
         <FooterMenu>
           <FooterLink to="/about" activeStyle>

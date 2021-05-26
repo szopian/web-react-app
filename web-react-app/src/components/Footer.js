@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+import { RiMenu4Line } from "react-icons/ri";
 
-const FooterContainer = styled.div`
+const FooterNav = styled.nav`
   left: 0;
   bottom: 0;
   width: 100%;
@@ -10,56 +11,62 @@ const FooterContainer = styled.div`
   display: flex;
 `;
 
-const FooterNav = styled.div`
+const Logo = styled.div`
   z-index: 1100;
   display: flex;
-  border-right: solid 1px #fff;
   padding: 0px 40px;
+  color: #fff;
 `;
 
-const FooterItem = styled.div`
+const Bars = styled.div`
   cursor: pointer;
   padding: 5px;
   margin: 0 auto;
   justify-content: center;
 `;
 
-const FooterLink = styled(Link)`
+const FooterMenu = styled.div`
   transition: 0.3s;
-  text-decoration: none;
-  color: white;
 
   &:hover {
     opacity: 0.5;
   }
 `;
 
+const FooterLink = styled(Link)`
+  text-decoration: none;
+  color: white;
+`;
+
 const CopyRight = styled.p`
   color: #fff;
   padding: 10px 50px;
   font-size: 12px;
-  border-right: solid 1px #fff;
 `;
 
 function Footer() {
   return (
-    <FooterContainer>
-      <CopyRight>Copyright © 2021 //GS SZOPIAN</CopyRight>
+    <>
       <FooterNav>
-        <FooterItem>
-          <FooterLink to="/about">About</FooterLink>
-        </FooterItem>
-        <FooterItem>
-          <FooterLink to="/home">Home</FooterLink>
-        </FooterItem>
-        <FooterItem>
-          <FooterLink to="/products">Products</FooterLink>
-        </FooterItem>
-        <FooterItem>
-          <FooterLink to="/work">Work</FooterLink>
-        </FooterItem>
+        <Logo to="/">Logo</Logo>
+        <Bars />
+        <FooterMenu>
+          <FooterLink to="/about" activeStyle>
+            About
+          </FooterLink>
+          <FooterLink to="/home" activeStyle>
+            Home
+          </FooterLink>
+          <FooterLink to="/products" activeStyle>
+            Products
+          </FooterLink>
+          <FooterLink to="/work" activeStyle>
+            Work
+          </FooterLink>
+        </FooterMenu>
+        <CopyRight>© 2021 //GS</CopyRight>
       </FooterNav>
-    </FooterContainer>
+    </>
   );
 }
 

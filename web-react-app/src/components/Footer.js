@@ -47,6 +47,7 @@ const Bars = styled(RiMenu4Line)`
 const FooterMenu = styled.div`
   display: flex;
   aligin-items: center;
+  margin-right: -20px;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -57,6 +58,10 @@ const CopyRight = styled.nav`
   display: flex;
   align-items: center;
   color: #fff;
+  margin-right: 20px;
+
+  @media screen and (max-width: 768px) {
+  }
 `;
 
 function Footer() {

@@ -46,12 +46,17 @@ const Bars = styled(RiMenu4Line)`
 
 const FooterMenu = styled.div`
   display: flex;
+  aligin-items: center;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
-const CopyRight = styled.p`
+const CopyRight = styled.nav`
+  display: flex;
+  align-items: center;
   color: #fff;
-
-  font-size: 12px;
 `;
 
 function Footer() {
@@ -76,7 +81,9 @@ function Footer() {
             Work
           </FooterLink>
         </FooterMenu>
-        <CopyRight>© 2021 //GS</CopyRight>
+        <CopyRight>
+          <h4>© 2021 //GS</h4>
+        </CopyRight>
       </FooterNav>
     </>
   );

@@ -13,6 +13,10 @@ const FooterNav = styled.nav`
   justify-content: space-between;
   position: relative;
   z-index: 1100;
+
+  @media screen and (max-width: 768px) {
+    font-size: 75%;
+  }
 `;
 
 const FooterLink = styled(Link)`
@@ -32,12 +36,12 @@ const FooterLink = styled(Link)`
 const Bars = styled(RiMenu4Line)`
   display: none;
   color: #fff;
+  margin-top: 25px;
+  margin-right: -20px;
 
   @media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    display: flex;
+    align-items: center;
     transoform: translate(-100%, 75%);
     cursor: pointer;
     font-size: 1.8rem;
@@ -71,7 +75,7 @@ function Footer() {
         <FooterLink to="/">
           <h1>Logo</h1>
         </FooterLink>
-        <Bars />
+        <Bars onClick={showSidebar} />
         <FooterMenu>
           <FooterLink to="/about" activeStyle>
             About

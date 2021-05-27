@@ -86,7 +86,9 @@ const SidebarWrap = styled.div`
   width: 100%;
 `;
 
-const CloseX = styled(CgClose)``;
+const CloseX = styled(CgClose)`
+  color: #fff;
+`;
 
 const SidebarLink = styled(Link)``;
 

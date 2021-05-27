@@ -73,10 +73,9 @@ const CopyRight = styled.nav`
 
 const SidebarNav = styled.div`
   background: #15171c;
-  width: 100%;
+  width: 400px;
   height: 350px;
   display: flex;
-  justify-content: center;
   position: fixed;
   bottom: 0;
   // left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
@@ -87,6 +86,8 @@ const SidebarNav = styled.div`
 
 const SidebarWrap = styled.div`
   width: 100%;
+  justify-content: center;
+  aligin-items: center;
 `;
 
 const CloseX = styled(CgClose)`
@@ -98,8 +99,11 @@ const SidebarLink = styled(Link)`
   color: #fff;
   display: flex;
   align-items: center;
-  padding: 0 1rem;
+  padding: 1rem 1rem;
   cursor: pointer;
+
+  justify-content: center;
+  aligin-items: center;
 `;
 
 const NavIcon = styled(Link)`

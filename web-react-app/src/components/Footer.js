@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { RiMenu4Line } from "react-icons/ri";
+import { CgClose } from "react-icons/cg";
 
 const FooterNav = styled.nav`
   left: 0;
@@ -68,7 +69,41 @@ const CopyRight = styled.nav`
   }
 `;
 
+const SidebarNav = styled.div`
+  background: #15171c;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
+  transition: 350ms;
+  z-index: 10;
+`;
+
+const SidebarWrap = styled.div`
+  width: 100%;
+`;
+
+const CloseX = styled(CgClose)``;
+
+const SidebarLink = styled(Link)``;
+
+const NavIcon = styled(Link)`
+  margin-left: 2rem;
+  font-size: 2rem;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+`;
+
 function Footer() {
+  const [sidebar, setSidebar] = useState(false);
+
+  const showSidebar = () => setSidebar(!sidebar);
+
   return (
     <>
       <FooterNav>
@@ -76,6 +111,26 @@ function Footer() {
           <h1>Logo</h1>
         </FooterLink>
         <Bars onClick={showSidebar} />
+        <SidebarNav>
+          <SidebarWrap>
+            <NavIcon to="#">
+              <CloseX onClick={showSidebar} />
+            </NavIcon>
+
+            <SidebarLink to="/about" activeStyle>
+              About
+            </SidebarLink>
+            <SidebarLink to="/home" activeStyle>
+              Home
+            </SidebarLink>
+            <SidebarLink to="/products" activeStyle>
+              Products
+            </SidebarLink>
+            <SidebarLink to="/work" activeStyle>
+              Work
+            </SidebarLink>
+          </SidebarWrap>
+        </SidebarNav>
         <FooterMenu>
           <FooterLink to="/about" activeStyle>
             About

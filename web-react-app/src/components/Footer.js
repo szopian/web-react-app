@@ -69,17 +69,20 @@ const CopyRight = styled.nav`
   }
 `;
 
+/* SIDEBAR */
+
 const SidebarNav = styled.div`
   background: #15171c;
-  width: 250px;
-  height: 100vh;
+  width: 100%;
+  height: 350px;
   display: flex;
   justify-content: center;
   position: fixed;
-  top: 0;
-  left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
+  bottom: 0;
+  // left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
   transition: 350ms;
   z-index: 10;
+  border-radius: 50px 0px;
 `;
 
 const SidebarWrap = styled.div`
@@ -90,7 +93,14 @@ const CloseX = styled(CgClose)`
   color: #fff;
 `;
 
-const SidebarLink = styled(Link)``;
+const SidebarLink = styled(Link)`
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  cursor: pointer;
+`;
 
 const NavIcon = styled(Link)`
   margin-left: 2rem;

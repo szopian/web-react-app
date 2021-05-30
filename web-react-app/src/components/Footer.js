@@ -79,8 +79,7 @@ const SidebarNav = styled.div`
   display: flex;
   position: fixed;
   bottom: 0;
-  transform: ${({ sidebar }) =>
-    sidebar ? "translateX(0)" : "translateX(-100%)"};
+  left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
   transition: 350ms;
   z-index: 10;
   border-radius: 50px 0px;

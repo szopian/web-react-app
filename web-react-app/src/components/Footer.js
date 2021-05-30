@@ -73,7 +73,7 @@ const CopyRight = styled.nav`
 
 const SidebarNav = styled.div`
   background: #15171c;
-  width: 400px;
+  width: 100%;
   height: 350px;
   display: flex;
   position: fixed;
@@ -82,6 +82,9 @@ const SidebarNav = styled.div`
   transition: 350ms;
   z-index: 10;
   border-radius: 50px 0px;
+  background: linear-gradient(red, transparent),
+    linear-gradient(to top left, lime, transparent),
+    linear-gradient(to top right, blue, transparent);
 `;
 
 const SidebarWrap = styled.div`
@@ -108,7 +111,7 @@ const SidebarLink = styled(Link)`
 
 const NavIcon = styled(Link)`
   margin-left: 2rem;
-  font-size: 2rem;
+  font-size: 3rem;
   height: 80px;
   display: flex;
   justify-content: flex-start;

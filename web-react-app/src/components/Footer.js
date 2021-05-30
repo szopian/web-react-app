@@ -46,6 +46,7 @@ const Bars = styled(RiMenu4Line)`
     transoform: translate(-100%, 75%);
     cursor: pointer;
     font-size: 1.8rem;
+    z-index: 9;
   }
 `;
 
@@ -78,7 +79,8 @@ const SidebarNav = styled.div`
   display: flex;
   position: fixed;
   bottom: 0;
-  // left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
+  transform: ${({ sidebar }) =>
+    sidebar ? "translateX(0)" : "translateX(-100%)"};
   transition: 350ms;
   z-index: 10;
   border-radius: 50px 0px;
@@ -136,31 +138,31 @@ function Footer() {
               <CloseX onClick={showSidebar} />
             </NavIcon>
 
-            <SidebarLink to="/about" activeStyle>
+            <SidebarLink to="/about" activestyle>
               About
             </SidebarLink>
-            <SidebarLink to="/home" activeStyle>
+            <SidebarLink to="/home" activestyle>
               Home
             </SidebarLink>
-            <SidebarLink to="/products" activeStyle>
+            <SidebarLink to="/products" activestyle>
               Products
             </SidebarLink>
-            <SidebarLink to="/work" activeStyle>
+            <SidebarLink to="/work" activestyle>
               Work
             </SidebarLink>
           </SidebarWrap>
         </SidebarNav>
         <FooterMenu>
-          <FooterLink to="/about" activeStyle>
+          <FooterLink to="/about" activestyle>
             About
           </FooterLink>
-          <FooterLink to="/home" activeStyle>
+          <FooterLink to="/home" activestyle>
             Home
           </FooterLink>
-          <FooterLink to="/products" activeStyle>
+          <FooterLink to="/products" activestyle>
             Products
           </FooterLink>
-          <FooterLink to="/work" activeStyle>
+          <FooterLink to="/work" activestyle>
             Work
           </FooterLink>
         </FooterMenu>

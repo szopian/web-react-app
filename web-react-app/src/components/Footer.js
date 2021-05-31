@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { RiMenu4Line } from "react-icons/ri";
 import { CgClose } from "react-icons/cg";
+import bgImage from "../images/adam-adams-mrl0Gr8Y20s-unsplash.jpg";
 
 const FooterNav = styled.nav`
   left: 0;
@@ -17,7 +18,7 @@ const FooterNav = styled.nav`
   background: #000;
 
   @media screen and (max-width: 768px) {
-    font-size: 75%;
+    font-size: 80%;
   }
 `;
 
@@ -73,7 +74,7 @@ const CopyRight = styled.nav`
 /* SIDEBAR */
 
 const SidebarNav = styled.div`
-  background: #15171c;
+  font-size: 20px;
   width: 100%;
   height: 350px;
   display: flex;
@@ -86,6 +87,11 @@ const SidebarNav = styled.div`
   background: linear-gradient(red, transparent),
     linear-gradient(to top left, lime, transparent),
     linear-gradient(to top right, blue, transparent);
+
+  background-image: url(${bgImage});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 `;
 
 const SidebarWrap = styled.div`
@@ -106,9 +112,9 @@ const SidebarLink = styled(Link)`
   padding: 1rem 1rem;
   cursor: pointer;
   text-shadow: 2px 2px 2px #000;
-
   justify-content: center;
   aligin-items: center;
+  box-shadow: 0 9px 9px -9px rgba(255, 255, 255, 0.6);
 `;
 
 const NavIcon = styled(Link)`

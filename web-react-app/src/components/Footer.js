@@ -14,6 +14,7 @@ const FooterNav = styled.nav`
   justify-content: space-between;
   position: relative;
   z-index: 1100;
+  background: #000;
 
   @media screen and (max-width: 768px) {
     font-size: 75%;
@@ -37,8 +38,8 @@ const FooterLink = styled(Link)`
 const Bars = styled(RiMenu4Line)`
   display: none;
   color: #fff;
-  margin-top: 25px;
-  margin-right: -20px;
+  margin-top: 27px;
+  // margin-right: -20px;
 
   @media screen and (max-width: 768px) {
     display: flex;
@@ -140,30 +141,16 @@ function Footer() {
             <SidebarLink to="/about" activestyle>
               About
             </SidebarLink>
-            <SidebarLink to="/home" activestyle>
-              Home
-            </SidebarLink>
-            <SidebarLink to="/products" activestyle>
-              Products
-            </SidebarLink>
-            <SidebarLink to="/work" activestyle>
-              Work
-            </SidebarLink>
+            <SidebarLink to="/home">Home</SidebarLink>
+            <SidebarLink to="/products">Products</SidebarLink>
+            <SidebarLink to="/work">Work</SidebarLink>
           </SidebarWrap>
         </SidebarNav>
         <FooterMenu>
-          <FooterLink to="/about" activestyle>
-            About
-          </FooterLink>
-          <FooterLink to="/home" activestyle>
-            Home
-          </FooterLink>
-          <FooterLink to="/products" activestyle>
-            Products
-          </FooterLink>
-          <FooterLink to="/work" activestyle>
-            Work
-          </FooterLink>
+          <FooterLink to="/about">About</FooterLink>
+          <FooterLink to="/home">Home</FooterLink>
+          <FooterLink to="/products">Products</FooterLink>
+          <FooterLink to="/work">Work</FooterLink>
         </FooterMenu>
         <CopyRight>
           <h4>© 2021 //GS</h4>

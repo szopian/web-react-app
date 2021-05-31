@@ -3,10 +3,8 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { RiMenu4Line } from "react-icons/ri";
 import { CgClose } from "react-icons/cg";
-import bgImage from "../images/david-becker-crs2vlkSe98-unsplash.jpg";
-// import bgImage from "../images/";
-// import bgImage from "../images/";
-// import bgImage from "../images/";
+import bgImage from "../images/mitchell-luo-U9EWuhUzgs0-unsplash.jpg";
+// import bgImage from "../images/parrish-freeman-1cAMinWGc3s-unsplash.jpg";
 
 const FooterNav = styled.nav`
   left: 0;

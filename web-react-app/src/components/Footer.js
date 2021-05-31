@@ -79,8 +79,8 @@ const SidebarNav = styled.div`
   height: 350px;
   display: flex;
   position: fixed;
-  bottom: 0;
-  left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
+  // bottom: 0;
+  bottom: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
   transition: 350ms;
   z-index: 10;
   border-radius: 50px 0px;
@@ -132,15 +132,13 @@ function Footer() {
           <h1>Logo</h1>
         </FooterLink>
         <Bars onClick={showSidebar} />
-        <SidebarNav>
+        <SidebarNav sidebar={sidebar}>
           <SidebarWrap>
             <NavIcon to="#">
               <CloseX onClick={showSidebar} />
             </NavIcon>
 
-            <SidebarLink to="/about" activestyle>
-              About
-            </SidebarLink>
+            <SidebarLink to="/about">About</SidebarLink>
             <SidebarLink to="/home">Home</SidebarLink>
             <SidebarLink to="/products">Products</SidebarLink>
             <SidebarLink to="/work">Work</SidebarLink>

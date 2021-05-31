@@ -31,7 +31,7 @@ const FooterLink = styled(Link)`
   cursor: pointer;
 
   &:active {
-    color: pink;
+    opacity: 0.5;
   }
 `;
 
@@ -39,7 +39,6 @@ const Bars = styled(RiMenu4Line)`
   display: none;
   color: #fff;
   margin-top: 27px;
-  // margin-right: -20px;
 
   @media screen and (max-width: 768px) {
     display: flex;
@@ -81,7 +80,7 @@ const SidebarNav = styled.div`
   position: fixed;
   // bottom: 0;
   bottom: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
-  transition: 350ms;
+  transition: 600ms;
   z-index: 10;
   border-radius: 50px 0px;
   background: linear-gradient(red, transparent),
@@ -106,6 +105,7 @@ const SidebarLink = styled(Link)`
   align-items: center;
   padding: 1rem 1rem;
   cursor: pointer;
+  text-shadow: 2px 2px 2px #000;
 
   justify-content: center;
   aligin-items: center;
@@ -137,7 +137,6 @@ function Footer() {
             <NavIcon to="#">
               <CloseX onClick={showSidebar} />
             </NavIcon>
-
             <SidebarLink to="/about">About</SidebarLink>
             <SidebarLink to="/home">Home</SidebarLink>
             <SidebarLink to="/products">Products</SidebarLink>

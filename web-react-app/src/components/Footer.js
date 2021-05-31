@@ -4,14 +4,13 @@ import styled from "styled-components";
 import { RiMenu4Line } from "react-icons/ri";
 import { CgClose } from "react-icons/cg";
 import bgImage from "../images/mitchell-luo-U9EWuhUzgs0-unsplash.jpg";
-// import bgImage from "../images/parrish-freeman-1cAMinWGc3s-unsplash.jpg";
 
 const FooterNav = styled.nav`
   left: 0;
   bottom: 0;
   width: 100%;
   padding: 0.5rem calc((100vw - 1000px) / 2);
-  height: 100px;
+  height: 10vh;
   display: flex;
   justify-content: space-between;
   position: relative;

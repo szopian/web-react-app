@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Image from "../images/robson-hatsukami-morgan-5C6veSN6hec-unsplash.jpg";
 import Title from "../components/Title";
 import Text from "../components/Text";
+import Footer from "../components/Footer";
 
 const Page = styled.div`
   background: #000;
@@ -17,7 +18,6 @@ const Page = styled.div`
 `;
 
 const Overlay = styled.div`
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -41,6 +41,7 @@ function Home() {
       <Header />
       <Title title="Home" />
       <Text text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, facere eum, accusamus iusto soluta reiciendis ipsum voluptates ad perspiciatis alias esse voluptatem natus debitis a unde numquam, exercitationem modi delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, facere eum, accusamus iusto soluta reiciendis ipsum voluptates ad perspiciatis alias esse voluptatem natus debitis a unde numquam, exercitationem modi delectus?" />
+      <Footer />
     </Page>
   );
 }

@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { RiMenu4Line } from "react-icons/ri";
 import { CgClose } from "react-icons/cg";
-import bgImage from "../images/adam-adams-mrl0Gr8Y20s-unsplash.jpg";
+import bgImage from "../images/kelly-sikkema-hSPVuakrJqs-unsplash.jpg";
+// import bgImage from "../images/annie-spratt-q8YzKhmEm8k-unsplash.jpg";
+// import bgImage from "../images/daniel-kainz-xx999OYHdwY-unsplash.jpg";
+// import bgImage from "../images/fallon-michael-XNNLD8U4I9Q-unsplash.jpg";
+// import bgImage from "../images/jan-kopriva-zi5wzvsaGjM-unsplash.jpg";
 
 const FooterNav = styled.nav`
   left: 0;

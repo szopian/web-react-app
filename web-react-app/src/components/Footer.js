@@ -35,9 +35,14 @@ const FooterLink = styled(Link)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+  transition: 0.3s;
 
   &:active {
     opacity: 0.5;
+  }
+
+  &:hover {
+    opacity: 0.7;
   }
 `;
 
@@ -45,13 +50,20 @@ const Bars = styled(RiMenu4Line)`
   display: none;
   color: #fff;
   margin-top: 27px;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.7;
+  }
 
   @media screen and (max-width: 768px) {
+    margin: 10px 0;
     display: flex;
     align-items: center;
+    justify-content: center;
     transoform: translate(-100%, 75%);
     cursor: pointer;
-    font-size: 1.8rem;
+    font-size: 2rem;
     z-index: 9;
   }
 `;
@@ -70,7 +82,7 @@ const CopyRight = styled.nav`
   display: flex;
   align-items: center;
   color: #fff;
-  margin-right: 20px;
+  margin-right: 15px;
 
   @media screen and (max-width: 768px) {
   }
@@ -84,7 +96,6 @@ const SidebarNav = styled.div`
   height: 350px;
   display: flex;
   position: fixed;
-  // bottom: 0;
   bottom: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
   transition: 600ms;
   z-index: 10;
@@ -107,6 +118,11 @@ const SidebarWrap = styled.div`
 
 const CloseX = styled(CgClose)`
   color: #fff;
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.7;
+  }
 `;
 
 const SidebarLink = styled(Link)`
@@ -116,10 +132,15 @@ const SidebarLink = styled(Link)`
   align-items: center;
   padding: 1rem 1rem;
   cursor: pointer;
-  text-shadow: 2px 2px 2px #000;
+  // text-shadow: 2px 2px 2px #000;
   justify-content: center;
   aligin-items: center;
   box-shadow: 0 9px 9px -9px rgba(255, 255, 255, 0.6);
+  transition: 0.3s;
+
+  &:hover {
+    opacity: 0.5;
+  }
 `;
 
 const NavIcon = styled(Link)`

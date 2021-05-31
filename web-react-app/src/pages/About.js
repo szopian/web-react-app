@@ -18,7 +18,6 @@ const Page = styled.div`
 `;
 
 const Overlay = styled.div`
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -37,15 +36,13 @@ const Overlay = styled.div`
 
 const About = () => {
   return (
-    <div>
-      <Page>
-        <Overlay />
-        <Header />
-        <Title title="About" />
-        <Text text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, facere eum, accusamus iusto soluta reiciendis ipsum voluptates ad perspiciatis alias esse voluptatem natus debitis a unde numquam, exercitationem modi delectus?" />
-      </Page>
+    <Page>
+      <Overlay />
+      <Header />
+      <Title title="About" />
+      <Text text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, facere eum, accusamus iusto soluta reiciendis ipsum voluptates ad perspiciatis alias esse voluptatem natus debitis a unde numquam, exercitationem modi delectus?" />
       <Footer />
-    </div>
+    </Page>
   );
 };
 

@@ -3,20 +3,27 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { RiMenu4Line } from "react-icons/ri";
 import { CgClose } from "react-icons/cg";
+import bgImage from "../images/mitchell-luo-U9EWuhUzgs0-unsplash.jpg";
 
 const FooterNav = styled.nav`
   left: 0;
   bottom: 0;
   width: 100%;
   padding: 0.5rem calc((100vw - 1000px) / 2);
-  height: 100px;
+  height: 10vh;
   display: flex;
   justify-content: space-between;
   position: relative;
   z-index: 1100;
+  background: #000;
+
+  background-image: url(${bgImage});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   @media screen and (max-width: 768px) {
-    font-size: 75%;
+    font-size: 80%;
   }
 `;
 
@@ -30,15 +37,14 @@ const FooterLink = styled(Link)`
   cursor: pointer;
 
   &:active {
-    color: pink;
+    opacity: 0.5;
   }
 `;
 
 const Bars = styled(RiMenu4Line)`
   display: none;
   color: #fff;
-  margin-top: 25px;
-  margin-right: -20px;
+  margin-top: 27px;
 
   @media screen and (max-width: 768px) {
     display: flex;
@@ -46,6 +52,7 @@ const Bars = styled(RiMenu4Line)`
     transoform: translate(-100%, 75%);
     cursor: pointer;
     font-size: 1.8rem;
+    z-index: 9;
   }
 `;
 
@@ -69,32 +76,55 @@ const CopyRight = styled.nav`
   }
 `;
 
+/* SIDEBAR */
+
 const SidebarNav = styled.div`
-  background: #15171c;
-  width: 250px;
-  height: 100vh;
+  font-size: 20px;
+  width: 100%;
+  height: 350px;
   display: flex;
-  justify-content: center;
   position: fixed;
-  top: 0;
-  left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
-  transition: 350ms;
+  // bottom: 0;
+  bottom: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
+  transition: 600ms;
   z-index: 10;
+  border-radius: 50px 0px;
+  background: linear-gradient(red, transparent),
+    linear-gradient(to top left, lime, transparent),
+    linear-gradient(to top right, blue, transparent);
+
+  background-image: url(${bgImage});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 `;
 
 const SidebarWrap = styled.div`
   width: 100%;
+  justify-content: center;
+  aligin-items: center;
 `;
 
 const CloseX = styled(CgClose)`
   color: #fff;
 `;
 
-const SidebarLink = styled(Link)``;
+const SidebarLink = styled(Link)`
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 1rem 1rem;
+  cursor: pointer;
+  text-shadow: 2px 2px 2px #000;
+  justify-content: center;
+  aligin-items: center;
+  box-shadow: 0 9px 9px -9px rgba(255, 255, 255, 0.6);
+`;
 
 const NavIcon = styled(Link)`
   margin-left: 2rem;
-  font-size: 2rem;
+  font-size: 3rem;
   height: 80px;
   display: flex;
   justify-content: flex-start;
@@ -113,39 +143,22 @@ function Footer() {
           <h1>Logo</h1>
         </FooterLink>
         <Bars onClick={showSidebar} />
-        <SidebarNav>
+        <SidebarNav sidebar={sidebar}>
           <SidebarWrap>
             <NavIcon to="#">
               <CloseX onClick={showSidebar} />
             </NavIcon>
-
-            <SidebarLink to="/about" activeStyle>
-              About
-            </SidebarLink>
-            <SidebarLink to="/home" activeStyle>
-              Home
-            </SidebarLink>
-            <SidebarLink to="/products" activeStyle>
-              Products
-            </SidebarLink>
-            <SidebarLink to="/work" activeStyle>
-              Work
-            </SidebarLink>
+            <SidebarLink to="/about">About</SidebarLink>
+            <SidebarLink to="/home">Home</SidebarLink>
+            <SidebarLink to="/products">Products</SidebarLink>
+            <SidebarLink to="/work">Work</SidebarLink>
           </SidebarWrap>
         </SidebarNav>
         <FooterMenu>
-          <FooterLink to="/about" activeStyle>
-            About
-          </FooterLink>
-          <FooterLink to="/home" activeStyle>
-            Home
-          </FooterLink>
-          <FooterLink to="/products" activeStyle>
-            Products
-          </FooterLink>
-          <FooterLink to="/work" activeStyle>
-            Work
-          </FooterLink>
+          <FooterLink to="/about">About</FooterLink>
+          <FooterLink to="/home">Home</FooterLink>
+          <FooterLink to="/products">Products</FooterLink>
+          <FooterLink to="/work">Work</FooterLink>
         </FooterMenu>
         <CopyRight>
           <h4>© 2021 //GS</h4>

@@ -47,8 +47,10 @@ const Bars = styled(RiMenu4Line)`
   margin-top: 27px;
 
   @media screen and (max-width: 768px) {
+    margin: 10px 0;
     display: flex;
     align-items: center;
+    justify-content: center;
     transoform: translate(-100%, 75%);
     cursor: pointer;
     font-size: 1.8rem;
@@ -70,7 +72,7 @@ const CopyRight = styled.nav`
   display: flex;
   align-items: center;
   color: #fff;
-  margin-right: 20px;
+  margin-right: 15px;
 
   @media screen and (max-width: 768px) {
   }

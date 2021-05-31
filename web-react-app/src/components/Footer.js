@@ -3,11 +3,10 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { RiMenu4Line } from "react-icons/ri";
 import { CgClose } from "react-icons/cg";
-import bgImage from "../images/kelly-sikkema-hSPVuakrJqs-unsplash.jpg";
-// import bgImage from "../images/annie-spratt-q8YzKhmEm8k-unsplash.jpg";
-// import bgImage from "../images/daniel-kainz-xx999OYHdwY-unsplash.jpg";
-// import bgImage from "../images/fallon-michael-XNNLD8U4I9Q-unsplash.jpg";
-// import bgImage from "../images/jan-kopriva-zi5wzvsaGjM-unsplash.jpg";
+import bgImage from "../images/david-becker-crs2vlkSe98-unsplash.jpg";
+// import bgImage from "../images/";
+// import bgImage from "../images/";
+// import bgImage from "../images/";
 
 const FooterNav = styled.nav`
   left: 0;
@@ -20,6 +19,11 @@ const FooterNav = styled.nav`
   position: relative;
   z-index: 1100;
   background: #000;
+
+  background-image: url(${bgImage});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   @media screen and (max-width: 768px) {
     font-size: 80%;

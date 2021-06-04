@@ -38,9 +38,11 @@ const FooterLink = styled(Link)`
   height: 100%;
   cursor: pointer;
   transition: 0.3s;
-  background: #000;
-  border-radius: 20px 0px;
+  background: linear-gradient(transparent 50%, rgba(212, 175, 55, 0.85) 50%);
+  border-radius: 0px 20px;
   margin-left: 5px;
+  text-shadow: 2px 2px 2px #000;
+  letter-spacing: 2px;
 
   &:active {
     opacity: 0.5;

@@ -39,7 +39,7 @@ const CardGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
-  // max-width: 1000px;
+  max-width: 1000px;
   margin: auto;
   background: #000;
 

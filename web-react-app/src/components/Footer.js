@@ -10,17 +10,19 @@ const FooterNav = styled.nav`
   bottom: 0;
   width: 100%;
   padding: 0.5rem calc((100vw - 1000px) / 2);
-  height: 10vh;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   position: relative;
   z-index: 1100;
   background: #000;
+  margin-top: -60px;
+  background: transparent;
 
-  background-image: url(${bgImage});
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  // background-image: url(${bgImage});
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
 
   @media screen and (max-width: 768px) {
     font-size: 80%;

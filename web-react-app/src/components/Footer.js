@@ -10,17 +10,19 @@ const FooterNav = styled.nav`
   bottom: 0;
   width: 100%;
   padding: 0.5rem calc((100vw - 1000px) / 2);
-  height: 10vh;
+  height: 60px;
   display: flex;
   justify-content: space-between;
   position: relative;
   z-index: 1100;
   background: #000;
+  margin-top: -60px;
+  background: transparent;
 
-  background-image: url(${bgImage});
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  // background-image: url(${bgImage});
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
 
   @media screen and (max-width: 768px) {
     font-size: 80%;
@@ -36,6 +38,28 @@ const FooterLink = styled(Link)`
   height: 100%;
   cursor: pointer;
   transition: 0.3s;
+  // background: linear-gradient(transparent 50%, rgba(212, 175, 55, 0.85) 50%);
+  // border-radius: 0px 20px;
+  margin-left: 5px;
+  text-shadow: 2px 2px 2px #000;
+  letter-spacing: 2px;
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+`;
+
+const FooterLinkLogo = styled(Link)`
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  text-shadow: 2px 2px 2px #000;
 
   &:active {
     opacity: 0.5;
@@ -72,6 +96,8 @@ const FooterMenu = styled.div`
   display: flex;
   aligin-items: center;
   margin-right: -20px;
+  background: linear-gradient(transparent 50%, rgba(212, 175, 55, 0.85) 50%);
+  border-radius: 0px 20px;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -83,6 +109,7 @@ const CopyRight = styled.nav`
   align-items: center;
   color: #fff;
   margin-right: 15px;
+  text-shadow: 2px 2px 2px #000;
 
   @media screen and (max-width: 768px) {
   }
@@ -160,9 +187,9 @@ function Footer() {
   return (
     <>
       <FooterNav>
-        <FooterLink to="/">
+        <FooterLinkLogo to="/">
           <h1>Logo</h1>
-        </FooterLink>
+        </FooterLinkLogo>
         <Bars onClick={showSidebar} />
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>

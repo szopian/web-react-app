@@ -39,6 +39,7 @@ const Logo = styled(Link)`
   cursor: pointer;
   text-decoration: none;
   color: #fff;
+  text-shadow: 2px 2px 2px #000;
   animation: ${rotate} 3s linear infinite;
 `;
 

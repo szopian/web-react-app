@@ -38,8 +38,8 @@ const FooterLink = styled(Link)`
   height: 100%;
   cursor: pointer;
   transition: 0.3s;
-  background: linear-gradient(transparent 50%, rgba(212, 175, 55, 0.85) 50%);
-  border-radius: 0px 20px;
+  // background: linear-gradient(transparent 50%, rgba(212, 175, 55, 0.85) 50%);
+  // border-radius: 0px 20px;
   margin-left: 5px;
   text-shadow: 2px 2px 2px #000;
   letter-spacing: 2px;
@@ -59,6 +59,7 @@ const FooterLinkLogo = styled(Link)`
   display: flex;
   align-items: center;
   padding: 0 1rem;
+  text-shadow: 2px 2px 2px #000;
 
   &:active {
     opacity: 0.5;
@@ -95,6 +96,8 @@ const FooterMenu = styled.div`
   display: flex;
   aligin-items: center;
   margin-right: -20px;
+  background: linear-gradient(transparent 50%, rgba(212, 175, 55, 0.85) 50%);
+  border-radius: 0px 20px;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -106,6 +109,7 @@ const CopyRight = styled.nav`
   align-items: center;
   color: #fff;
   margin-right: 15px;
+  text-shadow: 2px 2px 2px #000;
 
   @media screen and (max-width: 768px) {
   }

@@ -15,6 +15,7 @@ const Page = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin-bottom: -60px;
 `;
 
 const Overlay = styled.div`

@@ -38,6 +38,25 @@ const FooterLink = styled(Link)`
   height: 100%;
   cursor: pointer;
   transition: 0.3s;
+  background: #000;
+  border-radius: 20px 0px;
+  margin-left: 5px;
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+`;
+
+const FooterLinkLogo = styled(Link)`
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
 
   &:active {
     opacity: 0.5;
@@ -162,9 +181,9 @@ function Footer() {
   return (
     <>
       <FooterNav>
-        <FooterLink to="/">
+        <FooterLinkLogo to="/">
           <h1>Logo</h1>
-        </FooterLink>
+        </FooterLinkLogo>
         <Bars onClick={showSidebar} />
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>

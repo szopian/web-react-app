@@ -84,7 +84,9 @@ const ImageCard = styled.div`
   background-size: cover;
 `;
 
-const Article = styled.p``;
+const Article = styled.p`
+  padding: 20px;
+`;
 
 function Products() {
   return (
@@ -101,10 +103,7 @@ function Products() {
             Reprehenderit eveniet eligendi hic pariatur, sunt repellendus quidem
             non nostrum ducimus saepe aut sapiente harum beatae quod mollitia
             perferendis inventore, temporibus reiciendis. Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Reprehenderit eveniet eligendi
-            hic pariatur, sunt repellendus quidem non nostrum ducimus saepe aut
-            sapiente harum beatae quod mollitia perferendis inventore,
-            temporibus reiciendis.
+            amet consectetur adipisicing elit.
           </Article>
         </Card>
         <Card>
@@ -113,13 +112,28 @@ function Products() {
             Reprehenderit eveniet eligendi hic pariatur, sunt repellendus quidem
             non nostrum ducimus saepe aut sapiente harum beatae quod mollitia
             perferendis inventore, temporibus reiciendis. Lorem ipsum dolor sit
-            amet consectetur adipisicing elit. Reprehenderit eveniet eligendi
-            hic pariatur, sunt repellendus quidem non nostrum ducimus saepe aut
-            sapiente harum beatae quod mollitia perferendis inventore,
-            temporibus reiciendis.
+            amet consectetur adipisicing elit.
+          </Article>
+        </Card>
+        <Card>
+          <Article>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit eveniet eligendi hic pariatur, sunt repellendus quidem
+            non nostrum ducimus saepe aut sapiente harum beatae quod mollitia
+            perferendis inventore, temporibus reiciendis. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit.
           </Article>
         </Card>
         <ImageCard />
+        <Card>
+          <Article>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit eveniet eligendi hic pariatur, sunt repellendus quidem
+            non nostrum ducimus saepe aut sapiente harum beatae quod mollitia
+            perferendis inventore, temporibus reiciendis. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit.
+          </Article>
+        </Card>
       </CardGrid>
       <Footer />
     </Page>

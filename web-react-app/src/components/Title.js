@@ -15,6 +15,22 @@ const TitleText = styled.h1`
   border-radius: 0px 50px;
   letter-spacing: 2px;
   text-shadow: 2px 2px 2px #000;
+
+  @media (max-width: 580px) {
+    font-size: 4em;
+  }
+
+  @media (max-width: 415px) {
+    font-size: 3.5em;
+  }
+
+  @media (max-width: 376px) {
+    font-size: 3em;
+  }
+
+  @media (max-width: 290px) {
+    font-size: 2.3em;
+  }
 `;
 
 const Title = ({ title }) => {

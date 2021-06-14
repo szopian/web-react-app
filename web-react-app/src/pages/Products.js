@@ -36,7 +36,8 @@ const Overlay = styled.div`
 `;
 
 const CardGrid = styled.div`
-  // padding: 1rem;
+  padding: 3rem 3rem;
+  margin: 3rem 3rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 2rem;
@@ -76,6 +77,7 @@ const ImageCard = styled.div`
   padding: 10px 10px;
   margin: 10px;
   border-radius: 0px 50px;
+  min-height: 200px;
 
   background-color: rgb(255, 255, 255, 0.83);
   background-image: url(${Image1});

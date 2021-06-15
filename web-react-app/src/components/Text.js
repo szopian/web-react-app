@@ -15,6 +15,11 @@ const TextContainer = styled.h3`
   background-color: rgb(255, 255, 255, 0.83);
   color: #000;
   text-align: center;
+  min-width: 350px;
+
+  @media (max-width: 470px) {
+    min-width: 0;
+  }
 `;
 
 const Text = ({ text }) => {

@@ -116,7 +116,7 @@ const SidebarNav = styled.div`
   height: 350px;
   display: flex;
   position: fixed;
-  bottom: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
+  bottom: ${({ sidebar }) => (sidebar ? "0" : "-200%")};
   transition: 600ms;
   z-index: 10;
   border-radius: 50px 0px;

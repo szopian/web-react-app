@@ -31,8 +31,6 @@ function WelcomePage() {
     width: 100%;
     height: 100vh;
 
-    /*background: rgba(0, 0, 0, 0.2);*/
-
     /* changes images view */
     background: linear-gradient(red, transparent),
       linear-gradient(to top left, lime, transparent),

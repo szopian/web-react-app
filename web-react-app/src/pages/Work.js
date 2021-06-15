@@ -24,13 +24,6 @@ const Overlay = styled.div`
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.99);
-
-  /* changes images view 
-  background: linear-gradient(red, transparent),
-    linear-gradient(to top left, lime, transparent),
-    linear-gradient(to top right, blue, transparent);
-  */
-
   mix-blend-mode: overlay;
   background-blend-mode: screen;
 `;

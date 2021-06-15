@@ -11,10 +11,14 @@ const TextContainer = styled.h3`
   text-transform: uppercase;
   border-radius: 0px 50px;
   letter-spacing: 2px;
-  // text-shadow: 2px 2px 2px #000;
   background-color: rgb(255, 255, 255, 0.83);
   color: #000;
   text-align: center;
+  min-width: 400px;
+
+  @media (max-width: 470px) {
+    min-width: 0;
+  }
 `;
 
 const Text = ({ text }) => {

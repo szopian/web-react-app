@@ -103,9 +103,6 @@ const CopyRight = styled.nav`
   color: #fff;
   margin-right: 15px;
   text-shadow: 2px 2px 2px #000;
-
-  @media screen and (max-width: 768px) {
-  }
 `;
 
 /* SIDEBAR */

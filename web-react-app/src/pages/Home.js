@@ -24,13 +24,6 @@ const Overlay = styled.div`
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.7);
-
-  /* changes images view 
-  background: linear-gradient(red, transparent),
-    linear-gradient(to top left, lime, transparent),
-    linear-gradient(to top right, blue, transparent);
-  */
-
   mix-blend-mode: overlay;
   background-blend-mode: screen;
 `;
@@ -41,7 +34,7 @@ function Home() {
       <Overlay />
       <Header />
       <Title title="Home" />
-      <Text text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, facere eum, accusamus iusto soluta reiciendis ipsum voluptates ad perspiciatis alias esse voluptatem natus debitis a unde numquam, exercitationem modi delectus? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, facere eum, accusamus iusto soluta reiciendis ipsum voluptates ad perspiciatis alias esse voluptatem natus debitis a unde numquam, exercitationem modi delectus?" />
+      <Text text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, facere eum, accusamus iusto soluta reiciendis ipsum voluptates ad perspiciatis alias esse voluptatem natus debitis a unde numquam, exercitationem modi delectus?" />
       <Footer />
     </Page>
   );

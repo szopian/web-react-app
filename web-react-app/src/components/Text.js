@@ -10,11 +10,13 @@ const TextContainer = styled.h3`
   padding: 20px;
   text-transform: uppercase;
   border-radius: 0px 50px;
-  letter-spacing: 2px;
-  background-color: rgb(255, 255, 255, 0.83);
+  letter-spacing: 1px;
+  font-weight: bold;
+  background-color: rgb(255, 255, 255, 0.93);
   color: #000;
   text-align: center;
   min-width: 400px;
+  // text-shadow: 2px 2px 2px rgb(255, 255, 255, 0.83);
 
   @media (max-width: 470px) {
     min-width: 0;

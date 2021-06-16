@@ -178,7 +178,7 @@ function Footer() {
     <>
       <FooterNav>
         <FooterLinkLogo to="/">
-          <h1>Logo</h1>
+          <h1>Flake</h1>
         </FooterLinkLogo>
         <Bars onClick={showSidebar} />
         <SidebarNav sidebar={sidebar}>

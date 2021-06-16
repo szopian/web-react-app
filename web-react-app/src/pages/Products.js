@@ -8,7 +8,6 @@ import Footer from "../components/Footer";
 import Overlay from "../components/Overlay";
 
 const Page = styled.div`
-  // background: #000;
   height: 100vh;
   width: 100%;
   color: #fff;

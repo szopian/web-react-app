@@ -17,7 +17,8 @@ const FooterNav = styled.nav`
   z-index: 1100;
   background: #000;
   margin-top: -60px;
-  background: transparent;
+  background: linear-gradient(transparent 30%, #000);
+  position: fixed;
 
   @media screen and (max-width: 768px) {
     font-size: 80%;

@@ -92,7 +92,7 @@ function Header() {
 
   return (
     <HeaderContainer className={`header ${shadowStyle} ${hiddenStyle}`}>
-      <Logo to="/">LOGO</Logo>
+      <Logo to="/">FLAKE</Logo>
       <List>
         <ListItem>
           <FiFacebook />

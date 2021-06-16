@@ -5,6 +5,8 @@ import Image from "../images/ostap-senyuk-SW4BTHmSGQg-unsplash.jpg";
 import Footer from "../components/Footer";
 import Overlay from "../components/Overlay";
 
+import { Link } from "react-router-dom";
+
 import Title from "../components/Title";
 import Text from "../components/Text";
 
@@ -25,7 +27,7 @@ const About = () => {
       <Overlay opacity={0.9} />
       <Header />
       <Title title="About" />
-      <Text text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, facere eum, accusamus iusto soluta reiciendis ipsum voluptates ad perspiciatis alias esse voluptatem natus debitis a unde numquam, exercitationem modi delectus?" />
+      <Text text="FLAKE Snowboards are the only 100% independent handmade snowboard manufacturer in the UK. We have been handcrafting snowboards since 2012. We pride ourselves on manufacturing to the highest quality." />
       <Footer />
     </Page>
   );

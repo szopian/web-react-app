@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import styled from "styled-components";
 import Image from "../images/ostap-senyuk-SW4BTHmSGQg-unsplash.jpg";
 import Footer from "../components/Footer";
+import Overlay from "../components/Overlay";
 
 import Title from "../components/Title";
 import Text from "../components/Text";
@@ -18,20 +19,20 @@ const Page = styled.div`
   margin-bottom: -60px;
 `;
 
-const Overlay = styled.div`
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.9);
-  mix-blend-mode: overlay;
-  background-blend-mode: screen;
-`;
+// const Overlay = styled.div`
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background: rgba(0, 0, 0, 0.9);
+//   mix-blend-mode: overlay;
+//   background-blend-mode: screen;
+// `;
 
 const About = () => {
   return (
     <Page>
-      <Overlay />
+      <Overlay opacity={0.9} />
       <Header />
       <Title title="About" />
       <Text text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, facere eum, accusamus iusto soluta reiciendis ipsum voluptates ad perspiciatis alias esse voluptatem natus debitis a unde numquam, exercitationem modi delectus?" />

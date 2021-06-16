@@ -5,6 +5,7 @@ import Image from "../images/j-gowell-Lp8wAUBB1x8-unsplash.jpg";
 import Image1 from "../images/ostap-senyuk-SW4BTHmSGQg-unsplash.jpg";
 import Title from "../components/Title";
 import Footer from "../components/Footer";
+import Overlay from "../components/Overlay";
 
 const Page = styled.div`
   background: #000;
@@ -18,15 +19,15 @@ const Page = styled.div`
   margin-bottom: -60px;
 `;
 
-const Overlay = styled.div`
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.85);
-  mix-blend-mode: overlay;
-  background-blend-mode: screen;
-`;
+// const Overlay = styled.div`
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background: rgba(0, 0, 0, 0.85);
+//   mix-blend-mode: overlay;
+//   background-blend-mode: screen;
+// `;
 
 const CardGrid = styled.div`
   padding: 3rem 3rem;
@@ -86,7 +87,7 @@ const Article = styled.p`
 function Products() {
   return (
     <Page>
-      <Overlay />
+      <Overlay opacity={0.85} />
       <Header />
       <Title title="Products" />
 

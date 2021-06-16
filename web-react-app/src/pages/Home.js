@@ -8,7 +8,6 @@ import Footer from "../components/Footer";
 import Overlay from "../components/Overlay";
 
 const Page = styled.div`
-  background: #000;
   height: 200vh;
   width: 100%;
   color: #fff;
@@ -18,16 +17,6 @@ const Page = styled.div`
   background-size: cover;
   margin-bottom: -60px;
 `;
-
-// const Overlay = styled.div`
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background: rgba(0, 0, 0, 0.7);
-//   mix-blend-mode: overlay;
-//   background-blend-mode: screen;
-// `;
 
 function Home() {
   return (

@@ -18,6 +18,7 @@ const TextContainer = styled.h3`
 
   @media (max-width: 470px) {
     min-width: 0;
+    font-size: 80%;
   }
 `;
 

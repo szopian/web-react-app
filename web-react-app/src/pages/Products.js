@@ -43,7 +43,7 @@ const CardGrid = styled.div`
   max-width: 1732px;
   margin-left: auto;
   margin-right: auto;
-  padding: 4vw 20vw;
+  padding: 10vw 18vw;
 
   @media (min-width: 500px) {
     grid-template-columns: repeat(2, 1fr);

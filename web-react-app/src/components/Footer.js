@@ -94,10 +94,6 @@ const FooterMenu = styled.div`
   background: linear-gradient(transparent 50%, rgba(212, 175, 55, 0.85) 50%);
   border-radius: 0px 20px;
 
-  &:hover {
-    color: #a4a4a4;
-  }
-
   @media screen and (max-width: 768px) {
     display: none;
   }

@@ -44,6 +44,7 @@ const FooterLink = styled(Link)`
 
   &:hover {
     opacity: 0.7;
+    transform: translateY(-5px);
   }
 `;
 
@@ -92,6 +93,10 @@ const FooterMenu = styled.div`
   margin-right: -20px;
   background: linear-gradient(transparent 50%, rgba(212, 175, 55, 0.85) 50%);
   border-radius: 0px 20px;
+
+  &:hover {
+    color: #a4a4a4;
+  }
 
   @media screen and (max-width: 768px) {
     display: none;

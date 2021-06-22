@@ -44,6 +44,7 @@ const FooterLink = styled(Link)`
 
   &:hover {
     opacity: 0.7;
+    transform: translateY(-5px);
   }
 `;
 

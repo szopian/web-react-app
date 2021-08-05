@@ -9,11 +9,11 @@ const FooterNav = styled.nav`
   left: 0;
   bottom: 0;
   width: 100%;
-  padding: 0.5rem calc((100vw - 1000px) / 2);
-  height: 60px;
+  min-height: 100px;
+  display: flexbox;
+  justify-content: space-around;
+  align-items: center;
   display: flex;
-  justify-content: space-between;
-  position: relative;
   z-index: 1100;
   background: #000;
   margin-top: -60px;
@@ -65,22 +65,28 @@ const FooterLinkLogo = styled(Link)`
   }
 `;
 
+const BarContainer = styled.div`
+  align-self: flex-start;
+  justify-self: center;
+  padding: 20px 20px;
+  margin-right: -30px;
+`;
+
 const Bars = styled(RiMenu4Line)`
   display: none;
   color: #fff;
-  margin-top: 27px;
-  transition: 0.3s;
+  transition: 0.3s ease 0;
 
   &:hover {
     opacity: 0.7;
   }
 
-  @media screen and (max-width: 768px) {
-    margin: 10px 0;
+  @media (max-width: 768px) {
+    /* margin: 10px 0; */
     display: flex;
     align-items: center;
     justify-content: center;
-    transoform: translate(-100%, 75%);
+    transform: translate(-100%, 75%);
     cursor: pointer;
     font-size: 2rem;
     z-index: 9;
@@ -89,21 +95,19 @@ const Bars = styled(RiMenu4Line)`
 
 const FooterMenu = styled.div`
   display: flex;
-  aligin-items: center;
-  margin-right: -20px;
+  align-items: center;
   background: linear-gradient(transparent 50%, rgba(212, 175, 55, 0.85) 50%);
   border-radius: 0px 20px;
 
-  @media screen and (max-width: 768px) {
+  @media (max-width: 768px) {
     display: none;
   }
 `;
 
 const CopyRight = styled.nav`
   display: flex;
-  align-items: center;
+  align-self: center;
   color: #fff;
-  margin-right: 15px;
   text-shadow: 2px 2px 2px #000;
 `;
 
@@ -132,7 +136,7 @@ const SidebarNav = styled.div`
 const SidebarWrap = styled.div`
   width: 100%;
   justify-content: center;
-  aligin-items: center;
+  align-items: center;
 `;
 
 const CloseX = styled(CgClose)`
@@ -153,7 +157,7 @@ const SidebarLink = styled(Link)`
   cursor: pointer;
   // text-shadow: 2px 2px 2px #000;
   justify-content: center;
-  aligin-items: center;
+  align-items: center;
   box-shadow: 0 9px 9px -9px rgba(255, 255, 255, 0.6);
   transition: 0.3s;
 
@@ -182,7 +186,9 @@ function Footer() {
         <FooterLinkLogo to="/">
           <h1>Flake</h1>
         </FooterLinkLogo>
-        <Bars onClick={showSidebar} />
+        <BarContainer>
+          <Bars onClick={showSidebar} />
+        </BarContainer>
         <SidebarNav sidebar={sidebar}>
           <SidebarWrap>
             <NavIcon to="#">

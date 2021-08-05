@@ -5,8 +5,6 @@ import Image from "../images/ostap-senyuk-SW4BTHmSGQg-unsplash.jpg";
 import Footer from "../components/Footer";
 import Overlay from "../components/Overlay";
 
-import { Link } from "react-router-dom";
-
 import Title from "../components/Title";
 import Text from "../components/Text";
 

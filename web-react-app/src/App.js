@@ -18,7 +18,6 @@ function App() {
         <Route path="/products" component={Products} />
         <Route path="/work" component={Work} />
       </Switch>
-      ;
     </Router>
   );
 }
